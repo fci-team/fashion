@@ -11,7 +11,7 @@ import logo from "../assets/logo.png";
 import { NavLinks } from "../constants";
 
 // ** components import
-import NavButton from './apps/NavButton';
+import NavButton from './apps/NavBtns';
 import NavSearch from './apps/NavSearch';
 
 

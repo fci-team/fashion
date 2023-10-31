@@ -4,11 +4,14 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 // ** pages imports
 import { Home } from "./pages";
 
+// ** components import
+import { Navbar } from "./components";
+
 function App() {
   const Layout = () => {
     return (
       <div className="main">
-        {/* <Navbar /> */}
+        <Navbar />
 
         <Outlet />
 
@@ -25,22 +28,6 @@ function App() {
         {
           path: "/",
           element: <Home />,
-        },
-        {
-          path: "/users",
-          // element: <Users />,
-        },
-        {
-          path: "/products",
-          // element: <Products />,
-        },
-        {
-          path: "/products/:id",
-          // element: <SingleProduct />,
-        },
-        {
-          path: "/users/:id",
-          // element: <SingleUser />,
         },
       ],
     },

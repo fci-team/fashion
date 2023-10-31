@@ -47,3 +47,15 @@ p {
     background-color:var(--main-color);
     color:#fff;
 }
+.filledBtn , .outlinedBtn:hover {
+    background-color:var(--main-color);
+    color:#fff;
+    border:1px solid transparent;
+    transition: 0.3s;
+}
+.filledBtn:hover , .outlinedBtn {
+    color:var(--main-color);
+    background-color:#fff;
+    border-color:var(--main-color);
+    transition: 0.3s;
+}
