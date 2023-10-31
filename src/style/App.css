@@ -27,9 +27,16 @@ a {
     text-decoration:none !important;
     transition: 0.3s;
 }
+
 p {
     color:var(--light-color);
     margin-bottom:0 !important;
+}
+h2 {
+    font-size:36px !important;
+}
+h3 {
+    font-size:32px;
 }
 .center {
     display:flex;
@@ -51,11 +58,29 @@ p {
     background-color:var(--main-color);
     color:#fff;
     border:1px solid transparent;
+    padding:9px 30px;
     transition: 0.3s;
 }
 .filledBtn:hover , .outlinedBtn {
     color:var(--main-color);
     background-color:#fff;
     border-color:var(--main-color);
+    padding:9px 30px;
     transition: 0.3s;
+}
+.breadcrump a , .breadcrump span {
+    font-size:18px;
+    color:var(--light-color) !important;
+    font-weight: 500;
+}
+.breadcrump span {
+    display:inline-block;
+    margin:0 10px;
+}
+.breadcrump a:last-child {
+    color:var(--light-extra) !important;
+    cursor:auto;
+}
+a:hover{
+    color:var(--main-color) !important;
 }

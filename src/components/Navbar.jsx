@@ -17,7 +17,7 @@ import NavSearch from './apps/NavSearch';
 
 const Navbar = () => {
   return (
-    <header className="pt-3">
+    <header className="py-3">
       <nav className="navbar navbar-expand-lg bg-white pb-0">
         <div className="container">
           <a className="navbar-brand" href="#">
