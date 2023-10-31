@@ -6,7 +6,6 @@ import { Home } from "./pages";
 
 // ** components import
 import { Navbar } from "./components";
-import SignUp from "./pages/SignUp";
 
 function App() {
   const Layout = () => {
@@ -29,10 +28,6 @@ function App() {
         {
           path: "/",
           element: <Home />,
-        },
-        {
-          path: "/signup",
-          element: <SignUp />,
         },
       ],
     },
