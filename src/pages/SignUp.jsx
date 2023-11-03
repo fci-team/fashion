@@ -237,7 +237,7 @@ const SignUp = () => {
 
               <p className="mt-3">
                 Already have an Account?{" "}
-                <Link to="signin">
+                <Link to="/login">
                   <b>Sign In</b>
                 </Link>
               </p>
