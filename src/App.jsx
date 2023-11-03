@@ -5,17 +5,17 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home, Login, SignUp } from "./pages";
 
 // ** components import
-import { Navbar } from "./components";
+import { Footer, Navbar } from "./components";
 
 function App() {
   const Layout = () => {
     return (
       <div className="main">
-        <Navbar />
+        <Navbar/>
 
-        <Outlet />
+        <Outlet/>
 
-        {/* <Footer /> */}
+        <Footer/>
       </div>
     );
   };
