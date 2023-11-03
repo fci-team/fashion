@@ -42,7 +42,7 @@ const NavButton = ({ type }) => {
         <Person size={26} className="nav-icon"/>
         <ul className="user-account">
           <li>
-            <Link to='/signin'>Sign In</Link>
+            <Link to='/login'>Sign In</Link>
           </li>
           <li>
             <Link to='/signup'>Sign Up</Link>
