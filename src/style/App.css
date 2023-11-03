@@ -96,11 +96,7 @@ a:hover{
         line-height: 36px !important;
         
     }
-    .h2{
-        font-size:20px;
-        line-height: 20px;
-        
-    }
+    
 }    
 @media (min-width:768px) {
     .h1 {
@@ -108,11 +104,7 @@ a:hover{
         line-height: 45px !important;
         
     }
-    .h2{
-        font-size:20px !important;
-        line-height: 20px !important;
-        
-    }
+    
 }    
 @media (min-width:992px) {
     .h1 {
@@ -120,11 +112,7 @@ a:hover{
         line-height: 55px !important;
         
     }
-    .h2{
-        font-size:20px;
-        line-height: 20px;
-        
-    }
+    
 }    
 @media (min-width:1200px) {
     .h1 {
@@ -132,9 +120,5 @@ a:hover{
         line-height: 85px !important;
         
     }
-    .h2{
-        font-size:20px;
-        line-height: 20px;
-        
-    }
+    
 }    
