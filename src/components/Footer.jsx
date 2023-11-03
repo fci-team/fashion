@@ -1,5 +1,5 @@
 // ** icons
-import { Facebook, Twitter, Instagram, Youtube } from "react-bootstrap-icons";
+import { Facebook, Twitter, Instagram, Youtube} from "react-bootstrap-icons";
 
 // ** logo
 import logo from "../assets/logo.png";
@@ -72,8 +72,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div>
-        <p></p>
+      <div className="text-center my-5">
+        <p> &copy; 2023 Copyright All Right Reserved by HexFashion</p>
       </div>
     </div>
   );
