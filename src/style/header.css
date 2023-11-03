@@ -114,11 +114,14 @@ transition:0.3s;
     display: block !important;
     margin-left: 0 !important;
 }
-
+.user-account li a {
+    padding: 10px 20px !important;
+    display:inline-block;
+    width:100%;
+}
 .user-account li {
     font-size: 15px;
     font-weight: 400;
-    padding: 10px 20px;
     color: var(--dark-color);
     border-bottom: 1px solid rgba(221, 221, 221, 0.7);
     -webkit-transition: all 0.3s;
