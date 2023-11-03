@@ -2,7 +2,7 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
 // ** pages imports
-import { Home, SignUp } from "./pages";
+import { Home, Login, SignUp } from "./pages";
 
 // ** components import
 import { Navbar } from "./components";
@@ -32,6 +32,10 @@ function App() {
         {
           path: "/signup",
           element: <SignUp />,
+        },
+        {
+          path: "/login",
+          element: <Login/>,
         },
       ],
     },
