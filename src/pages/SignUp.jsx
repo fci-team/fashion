@@ -75,7 +75,7 @@ const SignUp = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12 col-lg-8">
-              <h3 className="h3 mb-5">Sign Up</h3>
+              <h3 className="h3">Sign Up</h3>
               <form
                 className="form-controle"
                 onSubmit={handleSubmit(submitHandler)}
