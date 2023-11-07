@@ -1,4 +1,4 @@
-import { CollectionArea, FeaturedProduct } from "../components"
+import { CollectionArea, FeaturedProduct, StoreSection } from "../components"
 import HomeCarousel from "../components/apps/HomeCarousel"
 
 const Home = () => {
@@ -7,6 +7,7 @@ const Home = () => {
       <HomeCarousel/>
       <FeaturedProduct/>
       <CollectionArea/>
+      <StoreSection/>
     </div>
   )
 }

@@ -65,12 +65,12 @@
     ================================== */
 
 .product__container {
-    margin:15px;
-    cursor:pointer
+    cursor:pointer;
+    position:relative;
 
 }
 .broduct__header {
-    position:relative;
+    position:relative !important;
 }
 .product__img {
     transition:0.5s;
@@ -81,7 +81,7 @@
 }
 .product__container:hover .product__buttons {
     opacity:1;
-    bottom:20%;
+    bottom:25%;
 }
 .product__container:hover .product__img {
     transform:rotate(5deg);
@@ -195,6 +195,34 @@ span.arrival {
     font-weight:600;
 }
 
+/*  =================================
+    ==== start Store section ===
+    ================================== */
+
+ul.categories {
+    display: block;
+    background-color: #fff;
+    border: 1px solid rgba(221, 221, 221, 0.3)
+}
+ul.categories li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 18px 25px;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--light-color);
+    border-right: 5px solid #fff;
+    -webkit-transition: 200ms;
+    cursor:pointer;
+    transition: 200ms;
+}
+.active-tap {
+    background-color: var(--secondary-bg-color) !important;
+    border-right: 5px solid var(--main-color) !important;
+    color: var(--dark-color) !important;
+}
 
 @media (min-width:557px) {
 }    

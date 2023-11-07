@@ -11,9 +11,9 @@ const CustomSlider = () => {
 
     // ** vars
     const items=[
-        <SingleProduct/>,
-        <SingleProduct/>,
-        <SingleProduct/>
+        <SingleProduct key={1}/>,
+        <SingleProduct key={2}/>,
+        <SingleProduct key={3}/>
         
     ]
     
