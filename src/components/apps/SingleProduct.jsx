@@ -4,15 +4,20 @@ import "../../style/home.css";
 
 // ** icons
 import { Cart, SuitHeart, ArrowRepeat, Eye } from "react-bootstrap-icons";
-const SingleProduct = () => {
+const SingleProduct = ({ flag }) => {
   return (
-    <div className="product__container">
+    <div className={`product__container ${flag !== "slider" ? "mb-4" : ""}`}>
       <div className="product__header">
-        <div className="product__img">
-          <img
-            src="https://hexfashion.xyz/assets/tenant/uploads/media-uploader/hexfashion/frame-34514-min1668592571.jpg"
-            alt=""
-          />
+        <div
+          className="product__container-img"
+          style={{ backgroundColor: `${flag !== "slider" ? "#eff0ff" : ""}` }}
+        >
+          <div className="product__img">
+            <img
+              src="https://hexfashion.xyz/assets/tenant/uploads/media-uploader/hexfashion/frame-34482-min1668590518.jpg"
+              alt=""
+            />
+          </div>
         </div>
         <div className="product__buttons d-flex gap-3 justify-content-center">
           <button>

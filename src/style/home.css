@@ -67,10 +67,11 @@
 .product__container {
     cursor:pointer;
     position:relative;
-
 }
-.broduct__header {
+.product__container-img {
     position:relative !important;
+    /* background-color:#eff0ff !important; */
+    overflow: hidden;
 }
 .product__img {
     transition:0.5s;
