@@ -1,4 +1,6 @@
-/* * ==== start Home  carousel style === ***/
+/*  ======================================
+    ===== start Home carousel style======= 
+    ====================================== */
 
 .carousel-images img:first-child {
     position: relative;
@@ -161,6 +163,14 @@ span.arrival {
     transition:0
 
 }
+.testimonials .alice-carousel__prev-btn-wrapper p , .testimonials .alice-carousel__next-btn-wrapper p {
+    top:100%;
+    left:0 !important;
+
+}
+.testimonials .alice-carousel {
+    position:unset;
+}
 .alice-carousel__prev-btn-wrapper p:hover ,
 .alice-carousel__next-btn-wrapper p:hover ,
 .alice-carousel__prev-btn-wrapper p:hover *,
@@ -172,8 +182,11 @@ span.arrival {
 .alice-carousel__prev-btn-wrapper p {
     right:70px;
 }
- 
+.testimonials .alice-carousel__next-btn-wrapper p {
+    left:70px  !important;
+}
 
+ 
 /*  =================================
     ==== start Collection section ===
     ================================== */
@@ -189,7 +202,7 @@ span.arrival {
 }
 .cart__description {
     padding:40px;
-    margin:30px auto;
+    margin:auto;
     box-shadow: 0 0 10px rgba(221, 221, 221, 0.2);
 }
 .cart__description h2 {
@@ -197,8 +210,16 @@ span.arrival {
 }
 
 /*  =================================
-    ==== start Store section ===
-    ================================== */
+    == Deel with week Store section =
+    ================================= */
+
+    .deal__img {
+        position:absolute;
+        bottom:0;
+    }
+
+
+
 
 ul.categories {
     display: block;
@@ -226,6 +247,7 @@ ul.categories li {
 }
 
 @media (min-width:557px) {
+    
 }    
 @media (min-width:768px) {
     .carousel-images {
@@ -234,6 +256,13 @@ ul.categories li {
     .carousel-images .mask {
         width:380px;
         height:380px;
+    }
+    .client__title {
+        max-width:500px;
+    }
+    .deal__content {
+        max-width:600px;
+        padding: 50px 0 50px 20px;
     }
 }    
 @media (min-width:992px) {
@@ -253,6 +282,20 @@ ul.categories li {
         padding:30px;
         max-width:380px;
     }
+    .deal__content {
+        max-width:600px;
+        padding: 100px 0 100px 70px;
+    }
+    .deal__img {
+        max-width:400px;
+    }
+    .client__title {
+        max-width:100%;
+    }
+    .testimonials .alice-carousel__prev-btn-wrapper p , .testimonials .alice-carousel__next-btn-wrapper p {
+        top:80%;
+    }
+
 }    
 @media (min-width:1200px) {
     .carousel-images {
@@ -271,6 +314,18 @@ ul.categories li {
         padding:30px;
         max-width:450px;
     }
+    .deal__content {
+        max-width:450px;
+        padding: 150px 0 150px 70px;
+    }
+
+    .deal__content p     {
+        font-size:18px;
+    }
+    .deal__img {
+        max-width:500px;
+    }
+    
 }    
 
 @media (max-width:768px) {
@@ -284,5 +339,8 @@ ul.categories li {
         top:25%;
         left:0;
         margin:auto;
+    }
+    .deal__content {
+        padding: 50px 0 50px 20px; ;
     }
 }

@@ -16,6 +16,9 @@
 .primary-text-color {
     color:var(--main-color);
 }
+.primary-bg-color  {
+    background-color:var(--main-bg-color);
+}
 
 img {
     width:100%;
@@ -131,4 +134,9 @@ a:hover{
         
     }
     
-}    
+}  
+@media (max-width:768px) {
+    .section {
+        padding:80px 0;
+    }
+}  
