@@ -57,6 +57,10 @@
     color:#fff;
 }
 
+.service__card {
+    border:1px solid rgba(221, 221, 221, 0.3);
+}
+
 @media (max-width:992px) {
     .footer .row > div:nth-child(2)::after{
         display:none;

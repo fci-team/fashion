@@ -5,7 +5,7 @@ import Person from "../../assets/deal-person.png";
 import '../../style/home.css'
 const DealWrapperSection = () => {
   return (
-    <div className="position-relative">
+    <div className="position-relative mt-5">
       <div className="container primary-bg-color">
         <div className="row justify-content-between align-items-center">
           <div className="col ps-lg-5">

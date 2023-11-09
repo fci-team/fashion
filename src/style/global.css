@@ -16,6 +16,10 @@
 .primary-text-color {
     color:var(--main-color);
 }
+.primary-bg {
+    background-color:var(--main-color) !important;
+} 
+
 .primary-bg-color  {
     background-color:var(--main-bg-color);
 }
@@ -54,7 +58,7 @@ h2.title {
     font-size:32px !important
 }
 .section {
-    padding:112px 0 110px;
+    padding-top:112px;
 }
 .center {
     display:flex;
@@ -102,6 +106,24 @@ h2.title {
 a:hover{
     color:var(--main-color) !important;
 }
+.alice-carousel__stage li:not(.alice-carousel__stage li:last-child) > div {
+    margin:12px;
+}
+.alice-carousel__dots-item:not(.__custom) {
+  text-indent: -9999px;
+  height: 10px;
+  width: 10px;
+  background: #DDD;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.alice-carousel__dots-item:not(.__custom).__active , .alice-carousel__dots-item:not(.__custom):hover {
+    background: var(--main-color);
+}
 
 @media (min-width:557px) {
     .h1 {
@@ -137,6 +159,9 @@ a:hover{
 }  
 @media (max-width:768px) {
     .section {
-        padding:80px 0;
+        padding-top:80px;
+    }
+    .h2 {
+        font-size:30px !important;
     }
 }  

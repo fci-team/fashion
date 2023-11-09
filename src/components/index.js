@@ -6,6 +6,9 @@ import CollectionArea from "./CollectionArea";
 import StoreSection from "./StoreSection";
 import FlashProduct from "./FlashProduct";
 import Testimonials from "./Testimonials";
+import BlogsSection from "./BlogsSection";
+import Partiners from "./Partiners";
+import Services from "./Services";
 export {
     Navbar,
     Breadcrump,
@@ -14,5 +17,8 @@ export {
     CollectionArea,
     StoreSection,
     FlashProduct,
-    Testimonials
+    Testimonials,
+    BlogsSection,
+    Partiners,
+    Services
 }

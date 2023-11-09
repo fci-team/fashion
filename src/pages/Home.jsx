@@ -1,4 +1,4 @@
-import { CollectionArea, FeaturedProduct, FlashProduct, StoreSection, Testimonials } from "../components"
+import { BlogsSection, CollectionArea, FeaturedProduct, FlashProduct, Partiners, StoreSection, Testimonials } from "../components"
 import DealWrapperSection from "../components/apps/DealWrapperSection"
 import HomeCarousel from "../components/apps/HomeCarousel"
 
@@ -12,6 +12,9 @@ const Home = () => {
       <DealWrapperSection/>
       <FlashProduct/>
       <Testimonials/>
+      <BlogsSection/>
+      <Partiners/>
+
     </div>
   )
 }

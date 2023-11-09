@@ -5,7 +5,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home, Login, SignUp } from "./pages";
 
 // ** components import
-import { Footer, Navbar } from "./components";
+import { Footer, Navbar, Services } from "./components";
 
 function App() {
   const Layout = () => {
@@ -14,7 +14,8 @@ function App() {
         <Navbar/>
 
         <Outlet/>
-
+        
+        <Services/>
         <Footer/>
       </div>
     );

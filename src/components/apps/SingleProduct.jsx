@@ -2,11 +2,29 @@
 // ** styles
 import "../../style/home.css";
 
+// ** motion
+import {motion} from 'framer-motion'
 // ** icons
 import { Cart, SuitHeart, ArrowRepeat, Eye } from "react-bootstrap-icons";
-const SingleProduct = ({ flag }) => {
+
+const SingleProduct = ({ flag , index }) => {
+
   return (
-    <div className={`product__container ${flag !== "slider" ? "mb-4" : ""}`}>
+    <motion.div
+    {
+      ...(index === 1 || index === 3) ? (
+        {
+          initial: { y: -200 },
+          transition: { duration: 1 },
+          whileInView: { y: 0 }
+        }
+      ) : index === 2 ?({
+        initial: { y: 100 },
+        transition: { duration: 1 },
+        whileInView: { y: 0 }
+      }) :null 
+    }
+      className={`product__container ${flag !== "slider" ? "mb-4" : ""}`}>
       <div className="product__header">
         <div
           className="product__container-img"
@@ -45,7 +63,7 @@ const SingleProduct = ({ flag }) => {
           <del>80$</del>
         </h6>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
