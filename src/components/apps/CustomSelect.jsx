@@ -1,13 +1,32 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 //** styles */
 
+import { useEffect, useState } from 'react'
 import '../../style/regester.css'
-const SelectBox = ({setCountry}) => {
+const SelectBox = ({setCountry ,isSubmitted}) => {
+
+  const [value , setValue] = useState('')
+  const [error , setError] = useState(false)
+
   const onSelect = (e)=>{
     setCountry(e.target.value)
+    setValue(e.target.value)
   }
+  useEffect(()=>{
+    if(isSubmitted) {
+      if(value.length === 0) {
+        setError(true)
+      }else {
+        setError(false)
+      }
+    }
+   
+  },[isSubmitted])
+
     return (
-      <select name="country" className="form-input" onChange={onSelect} required>
+      <>
+      <select name="country" className="form-input" onChange={onSelect} >
           <option value=""> Select Country</option>
           <option value="AF">Afghanistan</option>
           <option value="AL">Albania</option>
@@ -30,6 +49,8 @@ const SelectBox = ({setCountry}) => {
           <option value="MX">Mexico</option>
           <option value="RU">Russia</option>
       </select>
+      {error?(<p className='text-danger'>This field is Required</p>):(<></>)}
+      </>
     )
   }
   

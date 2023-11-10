@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 import PhoneNumberInput from "../components/apps/CustomPhoneInput";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { userSchema } from "../data/schema/signup";
+import { userSchema } from "../data/schema";
 import SelectBox from "../components/apps/CustomSelect";
 
 const initialData = {
@@ -38,6 +38,7 @@ const SignUp = () => {
   const [formData, setFormData] = useState(initialData);
   const [phoneNumber, SetPhoneNumber] = useState("");
   const [country, setCountry] = useState("");
+  const [isSubmitted,setIsSubmitted] = useState(false)
 
   const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -57,10 +58,16 @@ const SignUp = () => {
   }, [country, phoneNumber]);
 
   const submitHandler = () => {
+    console.log(formData)
     delete formData.confirmpassword;
     navigate("/");
   };
 
+  const clickHandler = ()=>{
+    setIsSubmitted(true)
+  }
+
+  
   const {
     register,
     handleSubmit,
@@ -145,11 +152,12 @@ const SignUp = () => {
                 </label>
                 <PhoneNumberInput
                   SetPhoneNumber={SetPhoneNumber}
+                  isSubmitted={isSubmitted}
                 />
                 <label htmlFor="country">
                   Country <span>*</span>
                 </label>
-                <SelectBox setCountry={setCountry} />
+                <SelectBox setCountry={setCountry} isSubmitted={isSubmitted}/>
 
                 <label htmlFor="city">
                   City <span>*</span>
@@ -230,7 +238,7 @@ const SignUp = () => {
                   </div>
                 </div>
 
-                <button className="filledBtn mt-3" type="submit">
+                <button className="filledBtn mt-3" type="submit" onClick={clickHandler}>
                   Sign Up
                 </button>
               </form>
