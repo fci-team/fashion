@@ -5,7 +5,7 @@ const Breadcrump = ({slug}) => {
   return (
     <div className="py-4 text-center mt-3 mb-5" style={{backgroundColor:'#fff6ee'}}>
       <div className="title">
-        <h2 className="h2">User Regeste</h2>
+        <h2 className="h2">{slug}</h2>
       </div>
       <div className="breadcrump mt-1">
         <Link to='/'>Home</Link>

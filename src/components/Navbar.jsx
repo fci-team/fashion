@@ -13,6 +13,7 @@ import { NavLinks } from "../constants";
 // ** components import
 import NavButton from './apps/NavBtns';
 import NavSearch from './apps/NavSearch';
+import BottomNav from './apps/BottomNav';
 
 
 const Navbar = () => {
@@ -59,6 +60,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+      <BottomNav/>
     </header>
   );
 };

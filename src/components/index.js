@@ -9,6 +9,7 @@ import Testimonials from "./Testimonials";
 import BlogsSection from "./BlogsSection";
 import Partiners from "./Partiners";
 import Services from "./Services";
+import ScrollBtn from "./apps/ScrollBtn";
 export {
     Navbar,
     Breadcrump,
@@ -20,5 +21,6 @@ export {
     Testimonials,
     BlogsSection,
     Partiners,
-    Services
+    Services,
+    ScrollBtn
 }

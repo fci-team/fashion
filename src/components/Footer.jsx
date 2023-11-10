@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center my-5">
+      <div className="text-center my-5 pb-5 pb-lg-0">
         <p> &copy; 2023 Copyright All Right Reserved by HexFashion</p>
       </div>
     </div>

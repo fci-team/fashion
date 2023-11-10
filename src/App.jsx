@@ -5,13 +5,15 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home, Login, SignUp } from "./pages";
 
 // ** components import
-import { Footer, Navbar, Services } from "./components";
+import { Footer, Navbar, ScrollBtn, Services } from "./components";
 
 function App() {
+
   const Layout = () => {
     return (
       <div className="main">
         <Navbar/>
+        <ScrollBtn/>
 
         <Outlet/>
         

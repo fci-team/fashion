@@ -16,6 +16,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { userSchema } from "../data/schema";
 import SelectBox from "../components/apps/CustomSelect";
+import { useBackToTop } from "../hooks/useBackToTop";
 
 const initialData = {
   name: "",
@@ -31,6 +32,7 @@ const initialData = {
 const SignUp = () => {
   // Hooks
   const navigate = useNavigate();
+  useBackToTop()
 
   // states
   const [viewPs, setViewPs] = useState(false);
