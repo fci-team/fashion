@@ -62,7 +62,7 @@ const Footer = () => {
       <div className="nav-footer">
         <div className="container">
           <div>
-            <ul className="d-flex gap-3 mb-0">
+            <ul className="d-flex gap-3 mb-0 justify-content-center justify-content-sm-start">
               {NavLinks.map((link) => (
                 <li key={link.link}>
                   <Link to={link.url.toLocaleLowerCase()}>{link.link}</Link>
